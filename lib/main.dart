@@ -43,7 +43,9 @@ class MyApp extends StatelessWidget {
             ),
             child: Row(
               children: [
-                CircleAvatar(backgroundImage: AssetImage('images/image.jpg'),),
+                CircleAvatar(
+                backgroundImage: AssetImage('images/image.jpg'),
+                radius: 50,),
                 Flexible(
                   fit: FlexFit.tight,
                 child: Container(
