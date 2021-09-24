@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+enum OrderOptions {orderaz, orderza}
 
 void main() {
   runApp(MyApp());
@@ -8,7 +9,7 @@ class MyApp extends StatelessWidget {
   
 
   List <String> listContact =[
-    "Aseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep","Budi","Cecep","Dimas","Edo"
+    "Aseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep","Budi","Cecep","Dimas","Edo","Fahmi","Gilang","Hasan","Indy","Jarjit","Kevin","Leo","Mamad","Nurul","Osas","Po","Que","Rangga","Saleh","Tina","Ulung","Via","Wahyu","Xavier","Yuli","Zakaria"
   ];
 
   @override
@@ -42,11 +43,11 @@ class MyApp extends StatelessWidget {
             ),
             child: Row(
               children: [
-                CircleAvatar(),
+                CircleAvatar(backgroundImage: NetworkImage("images/image.jpg"),),
                 Flexible(
                   fit: FlexFit.tight,
                 child: Container(
-                  margin: EdgeInsets.only(left: 20),
+                  margin: EdgeInsets.only(top: 20,left: 20,bottom:20),
                   width: 150,
                   height:120,
                   color: Colors.white,
@@ -55,7 +56,9 @@ class MyApp extends StatelessWidget {
                     children: [
                       Text(listContact[i],
                       overflow: TextOverflow.ellipsis,
-                      style: TextStyle(fontSize: 14.0),),
+                        style: TextStyle(fontSize: 30.0,
+                          fontWeight: FontWeight.bold
+                          ),),
                       Text("asep@gmail.com"),
                       Text("085125234645")
                     ],
@@ -69,4 +72,7 @@ class MyApp extends StatelessWidget {
       )
     );
   }
+
+
+
 }
