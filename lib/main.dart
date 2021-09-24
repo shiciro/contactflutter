@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
             ),
             child: Row(
               children: [
-                CircleAvatar(backgroundImage: NetworkImage("images/image.jpg"),),
+                CircleAvatar(backgroundImage: AssetImage('images/image.jpg'),),
                 Flexible(
                   fit: FlexFit.tight,
                 child: Container(
